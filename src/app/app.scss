@@ -15,6 +15,14 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
+.color-primary {
+  color: map-get($colors, primary) !important;
+}
+
+.background-primary {
+  background-color: map-get($colors, primary) !important;
+}
+
 .avatar-50 {
     border-radius: 50%;
 }

@@ -24,9 +24,9 @@
 
 <ion-content>
 
-	<ion-title text-center class="title">PERFIL</ion-title>
+	<ion-title text-center class="title">MEU PERFIL</ion-title>
 
-		<div text-center>
+		<div text-center (click)=changePhoto()>
 			<img [src]="user.urlFoto" class="avatar-50 content-picture-size" />
 		</div>
 
@@ -35,7 +35,7 @@
 			<ion-label>{{user.email}}</ion-label>
 			<ion-label>Login: {{user.login}}</ion-label>
 
-			<button ion-button color="primary" clear class="change-pass">
+			<button ion-button color="primary" clear class="change-pass" (click)="changePass()">
 				<ion-icon name="key"></ion-icon>Alterar senha
 			</button>
 		</div>
