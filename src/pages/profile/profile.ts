@@ -8,7 +8,7 @@ import { ChangePhotoPage } from './change-photo/change-photo'
 
 @Component({
 	templateUrl: "profile.html",
-	styleUrls: ["/src/pages/profile/profile.scss"]
+	selector: "profile-page"
 })
 export class ProfilePage {
 

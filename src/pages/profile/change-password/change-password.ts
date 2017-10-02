@@ -9,7 +9,7 @@ import { ProfilePage } from './../profile';
 
 @Component({
 	templateUrl: "change-password.html",
-	styleUrls: ["/src/pages/profile/change-password/change-password.scss"]
+	selector: "change-password"
 })
 export class ChangePasswordPage implements OnInit {
 
