@@ -39,18 +39,18 @@ export class ChangePhotoPage {
 	}
 
 	confirm() {
-		this._accountService.sendPicture({ 'picture': [{ 'content': this.base64Image }] }, this._userService.getLogedUser()).subscribe(
-			result => {
-				this.navCtrl.setRoot(ProfilePage);
-			},
-			error => {
-				let toast = this.toastCtrl.create({
-					message: "Houve um erro ao enviar a foto do perfil. Por favor tente novamente.",
-					duration: 3000
-				});
-				toast.present();
-			}
-		);
+		// this._accountService.sendPicture({ 'picture': [{ 'content': this.base64Image }] }, this._userService.getLogedUser()).subscribe(
+		// 	result => {
+		// 		this.navCtrl.setRoot(ProfilePage);
+		// 	},
+		// 	error => {
+		// 		let toast = this.toastCtrl.create({
+		// 			message: "Houve um erro ao enviar a foto do perfil. Por favor tente novamente.",
+		// 			duration: 3000
+		// 		});
+		// 		toast.present();
+		// 	}
+		// );
 	}
 
 	cancel() {
