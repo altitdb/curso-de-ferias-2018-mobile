@@ -1,5 +1,6 @@
 // DEPENDENCES
 import {BrowserModule} from '@angular/platform-browser'
+import {HttpModule} from "@angular/http"
 import {ErrorHandler, NgModule} from '@angular/core'
 import {StatusBar} from '@ionic-native/status-bar'
 import {SplashScreen} from '@ionic-native/splash-screen'
@@ -17,6 +18,7 @@ import {ChangePasswordPage} from "./pages/profile/change-password/change-passwor
 import {ChangePhotoPage} from "./pages/profile/change-photo/change-photo"
 
 // SERVICES
+import {ApiService} from "./providers/api.service"
 import {UserService} from "./providers/user.service"
 import {AccountService} from "./providers/account.service"
 import {CameraService} from "./providers/camera.service"
@@ -24,33 +26,35 @@ import {CameraService} from "./providers/camera.service"
 // MODULES
 @NgModule({
   declarations: [
-    MyApp,
+    ChangePasswordPage,
+    ChangePhotoPage,
     HeaderComponent,
     HomePage,
-    ProfilePage,
-    ChangePasswordPage,
-    ChangePhotoPage
+    MyApp,
+    ProfilePage
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
+    ChangePasswordPage,
+    ChangePhotoPage,
     HeaderComponent,
     HomePage,
-    ProfilePage,
-    ChangePasswordPage,
-    ChangePhotoPage
+    MyApp,
+    ProfilePage
   ],
   providers: [
-    StatusBar,
-    SplashScreen,
-    UserService,
-    Camera,
+    ApiService,
     AccountService,
+    Camera,
     CameraService,
+    SplashScreen,
+    StatusBar,
+    UserService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

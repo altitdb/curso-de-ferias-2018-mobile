@@ -1,0 +1,38 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "username",
+      "login": "username",
+      "email": "username@email.com",
+      "senha": "123456",
+      "perfil": 1,
+      "urlFoto": "hauhauha"
+    }
+  ],
+  "disciplinas": [
+    {
+      "id": "1",
+      "descricao": "username",
+      "instrutores": [1, 2, 3],
+      "dataInicio": "20/02/2017",
+      "dataTermino": "20/02/2017",
+      "segmento": 1,
+      "urlLogo": "123456"
+    }
+  ],
+  "relatorio": [
+    {
+      "id": "1",
+      "username": "username",
+      "password": "123456"
+    }
+  ],
+  "frequencia": [
+    {
+      "id": "1",
+      "username": "username",
+      "password": "123456"
+    }
+  ]
+}
